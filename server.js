@@ -22,7 +22,7 @@ app.use(middlewear.logger);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/about', middlewear.requireAuth ,function (req, res) {
-	res.send('About Us');
+	res.send('About Us!');
 });
 
 app.listen(port, function (){
